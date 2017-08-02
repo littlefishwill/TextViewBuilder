@@ -17,3 +17,20 @@
                 .add(new Text(MainActivity.this,R.mipmap.ic_launcher,Text.ResType.IMAGE).sms("18301069161","测试发个短信"));
 
         textViewBuilder.build(textView);
+
+### Gradle 引用
+
+jcenter 上传比较麻烦，所以使用jitpark
+```
+       allprojects {
+                     repositories {
+                            ...
+                           maven { url 'https://jitpack.io' }
+                    }
+       }
+       
+       dependencies {
+	        compile 'com.github.littlefishwill:TextViewBuilder:52a55ad954'
+	}
+  ```
+
