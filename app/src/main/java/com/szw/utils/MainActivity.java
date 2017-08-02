@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         textViewBuilder
                 .add(new Text("默认字体样式").color(Color.BLACK).br())
                 .add(new Text("百度链接，点击可以自动跳转百度").strikethroughLine().color(Color.RED).bgColor(Color.YELLOW).bold().size(60).italic().underLine().webLink("http://www.baidu.com").br())
-                .add(new Text("自动跳转拨打电话界面").color(Color.BLUE).bold().tell("18301069161").sizeRe(0.5f).br())
+                .add(new Text("自动跳转拨打电话界面").color(Color.BLUE).bold().tell("18301069161").sizeRe(3f).br())
                 .add(new Text(MainActivity.this,R.mipmap.ic_launcher,Text.ResType.IMAGE).sms("18301069161","测试发个短信"));
 
         textViewBuilder.build(textView);
